@@ -9,8 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Image(systemName: "smiley")//smiley画像を呼び出し
+            .resizable() //imageのサイズ変更
+            .foregroundColor(/*@START_MENU_TOKEN@*/.green/*@END_MENU_TOKEN@*/) //imageのカラーを変更
+            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/) //paddingを設定
+            .scaledToFit() //UI部品の縦横比を変えずに画面に収まるようにサイズを変更
     }
 }
 
